@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiffrement de Vigenère</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chiffrement de Vigenère</h1>
+        
+        <label for="text">Texte :</label>
+        <textarea id="text" rows="4"></textarea>
+        
+        <label for="key">Clé :</label>
+        <input type="text" id="key">
+
+        <label for="operation">Choisissez une opération :</label>
+        <select id="operation">
+            <option value="encrypt">Crypter</option>
+            <option value="decrypt">Décrypter</option>
+        </select>
+
+        <button id="submit">Valider</button>
+        
+        <h2>Résultat :</h2>
+        <textarea id="result" rows="4" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
